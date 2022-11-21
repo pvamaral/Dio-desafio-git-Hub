@@ -1,0 +1,138 @@
+unit F_main;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, db, BufDataset, sqldb, sqldblib, sqlite3conn, IBConnection,
+  FBAdmin, pqconnection, dbf, memds, odbcconn, FileUtil, DividerBevel, Forms,
+  Controls, Graphics, Dialogs, Menus, ExtCtrls, DBGrids, StdCtrls, MaskEdit,
+  Buttons;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    BD_premium: TIBConnection;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    BitBtn3: TBitBtn;
+    BitBtn4: TBitBtn;
+    MenuItem10: TMenuItem;
+    MenuItem11: TMenuItem;
+    MenuItem12: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
+    MenuItem5: TMenuItem;
+    MenuItem6: TMenuItem;
+    MenuItem7: TMenuItem;
+    MenuItem8: TMenuItem;
+    MenuItem9: TMenuItem;
+    MenuPr: TMainMenu;
+    MenuItem1: TMenuItem;
+    Premium_geral: TSQLTransaction;
+    SQLQuery1: TSQLQuery;
+    StaticText1: TStaticText;
+    StaticText2: TStaticText;
+    StaticText3: TStaticText;
+    procedure BitBtn1Click(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn3Click(Sender: TObject);
+    procedure BitBtn4Click(Sender: TObject);
+    procedure DataSource1DataChange(Sender: TObject; Field: TField);
+    procedure DataSource1StateChange(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FornecedoresAfterConnect(Sender: TObject);
+    procedure MenuItem1Click(Sender: TObject);
+    procedure MenuItem2Click(Sender: TObject);
+    procedure MenuItem5Click(Sender: TObject);
+    procedure MenuItem7Click(Sender: TObject);
+    procedure ODBCConnection1Login(Sender: TObject; Username, Password: string);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.MenuItem1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.DataSource1DataChange(Sender: TObject; Field: TField);
+begin
+
+end;
+
+procedure TForm1.BitBtn1Click(Sender: TObject);
+begin
+  Statictext2.visible:=true;
+end;
+
+procedure TForm1.BitBtn2Click(Sender: TObject);
+begin
+  Statictext3.Visible:=true;
+end;
+
+procedure TForm1.BitBtn3Click(Sender: TObject);
+begin
+  Statictext2.visible:=false;
+  Statictext3.visible:=false;
+  Statictext1.visible:=false;
+end;
+
+procedure TForm1.BitBtn4Click(Sender: TObject);
+begin
+          Statictext1.visible:=true;
+end;
+
+procedure TForm1.DataSource1StateChange(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.FornecedoresAfterConnect(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.MenuItem2Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.MenuItem5Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.MenuItem7Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.ODBCConnection1Login(Sender: TObject; Username,
+  Password: string);
+begin
+
+end;
+
+end.
+

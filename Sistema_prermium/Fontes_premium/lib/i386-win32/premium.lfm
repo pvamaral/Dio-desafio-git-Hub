@@ -1,0 +1,27 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 534
+  HorizontalOffset = 1034
+  VerticalOffset = 153
+  Width = 575
+  object BD_premium: TIBConnection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'C:\Sistema_premium\BD_premium\BD_PREMIUM.GDB'
+    KeepConnection = False
+    Password = '002571a'
+    UserName = 'SYSDBA'
+    HostName = 'localhost'
+    Options = []
+    CheckTransactionParams = False
+    left = 40
+    top = 16
+  end
+  object Premium_geral: TSQLTransaction
+    Active = True
+    Database = BD_premium
+    Options = []
+    left = 96
+    top = 16
+  end
+end
